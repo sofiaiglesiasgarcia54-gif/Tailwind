@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Aguja y el Tornillo · Ferretería y Mercería</title>
+
+    <!--
+    =====================================================================
+      EJERCICIO: VÍSTEME CON TAILWIND
+      Ferretería y Mercería "La Aguja y el Tornillo"
+    =====================================================================
+      Objetivo: conseguir que esta página se parezca lo máximo posible
+      a las capturas objetivo-escritorio.png y objetivo-movil.png.
+
+      Reglas:
+        1. NO se toca la estructura del HTML: solo se rellenan los
+           atributos class="" que ya están puestos.
+        2. NO se escribe CSS propio: todo con clases de Tailwind.
+        3. Id bloque a bloque (1 a 5). Comprobad el resultado en el
+           navegador y en modo móvil (F12 > icono de dispositivo).
+
+      Paleta usada en el objetivo (colores de Tailwind):
+        green-900 (verde rótulo), amber-100 y amber-300 (crema y mostaza),
+        red-700 (rojo), amber-500, stone-100, stone-500, stone-600, white.
+
+      Consejos:
+        - Instalad la extensión "Tailwind CSS IntelliSense" en VS Code:
+          autocompleta las clases y enseña el CSS que genera cada una.
+        - Documentación: https://tailwindcss.com/docs
+          (usad el buscador de arriba, Ctrl + K)
+    =====================================================================
+    -->
+
+    <!-- Tailwind CSS v4 desde el Play CDN (no hace falta instalar nada) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+
+    <!-- =================================================================
+         1. CABECERA
+         - Fondo verde y texto crema.
+         - Contenido centrado con un ancho máximo y márgenes laterales.
+         - En móvil: logo y enlaces uno debajo del otro, centrados.
+           En escritorio (md:): logo a la izquierda, enlaces a la derecha.
+         - Enlaces en mayúsculas, separados entre sí y que cambian de
+           color al pasar el ratón.
+         Pistas: bg-*, text-*, max-w-*, mx-auto, px-*, py-*, flex,
+                 flex-col, md:flex-row, items-center, justify-between,
+                 gap-*, font-serif, uppercase, tracking-*, hover:
+         Docs: https://tailwindcss.com/docs/flex-direction
+               https://tailwindcss.com/docs/justify-content
+         ================================================================= -->
+    <header class="">
+        <nav class="">
+            <a href="#" class="">La Aguja y el Tornillo</a>
+            <ul class="">
+                <li><a href="#productos" class="">Productos</a></li>
+                <li><a href="#horario" class="">Horario</a></li>
+                <li><a href="#contacto" class="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- =============================================================
+             2. PORTADA (HERO)
+             - Fondo crema y una línea verde gruesa abajo.
+             - Todo centrado, con mucho espacio arriba y abajo.
+             - Título grande con tipografía serif, más grande en escritorio.
+             - El párrafo no debe ocupar todo el ancho.
+             - Botón redondeado tipo píldora, rojo, que se oscurece al
+               pasar el ratón.
+             Pistas: text-center, py-20, text-4xl, md:text-6xl, font-bold,
+                     max-w-2xl, mt-*, inline-block, rounded-full,
+                     border-b-4, border-green-900, hover:bg-*
+             Docs: https://tailwindcss.com/docs/font-size
+                   https://tailwindcss.com/docs/border-radius
+             ============================================================= -->
+        <section class="">
+            <div class="">
+                <p class="">Desde 1962 en el barrio</p>
+                <h1 class="">Si no lo tenemos, se lo pedimos</h1>
+                <p class="">
+                    Tornillos sueltos, botones de repuesto, cremalleras, bombillas y copias de llaves.
+                    Lo de toda la vida, con la atención de siempre.
+                </p>
+                <a href="#horario" class="">Ver horario</a>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             3. PRODUCTOS (TARJETAS)
+             - Las tres tarjetas van en una columna en móvil y en tres
+               columnas en escritorio, con separación entre ellas.
+             - Tarjetas blancas, con esquinas redondeadas, sombra y una
+               franja gruesa de color arriba (cada una de un color).
+             - Al pasar el ratón la tarjeta sube un poco y la sombra crece,
+               con una transición suave.
+             Pistas: grid, md:grid-cols-3, gap-*, p-*, bg-white,
+                     rounded-xl, shadow-md, border-t-8, border-*,
+                     transition, hover:-translate-y-1, hover:shadow-xl,
+                     space-y-*
+             Docs: https://tailwindcss.com/docs/grid-template-columns
+                   https://tailwindcss.com/docs/box-shadow
+             ============================================================= -->
+        <section id="productos" class="">
+            <h2 class="">Qué encontrará en la tienda</h2>
+
+            <div class="">
+                <article class="">
+                    <h3 class="">Ferretería</h3>
+                    <p class="">Todo para los arreglos de casa, también por unidades.</p>
+                    <ul class="">
+                        <li>Tornillos, tuercas y tacos</li>
+                        <li>Herramienta de mano</li>
+                        <li>Bombillas y enchufes</li>
+                    </ul>
+                </article>
+
+                <article class="">
+                    <h3 class="">Mercería</h3>
+                    <p class="">Para coser, remendar y dar una segunda vida a la ropa.</p>
+                    <ul class="">
+                        <li>Botones de todos los tamaños</li>
+                        <li>Hilos, agujas y dedales</li>
+                        <li>Cremalleras y gomas</li>
+                    </ul>
+                </article>
+
+                <article class="">
+                    <h3 class="">Servicios</h3>
+                    <p class="">Lo hacemos en el momento, mientras espera.</p>
+                    <ul class="">
+                        <li>Copia de llaves</li>
+                        <li>Afilado de tijeras y cuchillos</li>
+                        <li>Pedidos por encargo</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             4. HORARIO Y CONTACTO
+             - Dos cajas: una encima de otra en móvil y una al lado de la
+               otra en escritorio, ocupando el mismo ancho.
+             - En cada fila del horario, el día a la izquierda y la hora
+               a la derecha, con una línea fina debajo.
+             Pistas: flex, flex-col, md:flex-row, flex-1, justify-between,
+                     border-b, border-y-4, pb-*, rounded-xl, text-right
+             Docs: https://tailwindcss.com/docs/flex
+                   https://tailwindcss.com/docs/border-width
+             ============================================================= -->
+        <section id="horario" class="">
+            <div class="">
+                <div class="">
+                    <h2 class="">Horario</h2>
+                    <ul class="">
+                        <li class=""><span>Lunes a viernes</span><strong class="">9:30 a 13:30 y 17:00 a 20:00</strong></li>
+                        <li class=""><span>Sábados</span><strong>10:00 a 14:00</strong></li>
+                        <li class=""><span>Domingos</span><strong class="">Cerrado</strong></li>
+                    </ul>
+                </div>
+
+                <div id="contacto" class="">
+                    <h2 class="">Dónde estamos</h2>
+                    <p class="">Calle del Carmen, 12<br>Barrio de Lavapiés, Madrid</p>
+                    <p class="">915 55 12 12</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================================================================
+         5. PIE
+         - Texto pequeño, gris y centrado, con espacio arriba y abajo.
+         ================================================================= -->
+
+    <!-- =================================================================
+         RETOS EXTRA (si os sobra tiempo)
+         a) Modo oscuro: usad el prefijo dark: para que la página se vea
+            bien si el sistema está en modo oscuro.
+            https://tailwindcss.com/docs/dark-mode
+         b) Color propio: cread un color "rotulo" con @theme dentro de
+            <style type="text/tailwindcss"> y usadlo como bg-rotulo.
+            https://tailwindcss.com/docs/theme
+         c) Menú hamburguesa en móvil con un poco de JavaScript.
+         ================================================================= -->
+    <footer class="">
+        <p>La Aguja y el Tornillo · Ferretería y Mercería · Desde 1962</p>
+    </footer>
+
+</body>
+</html>
