@@ -91,7 +91,7 @@ Dentro de `index.html` cada bloque tiene un comentario con lo que hay que conseg
 Fondo verde con texto crema. Contenido centrado con un ancho máximo. En móvil, logo y enlaces uno debajo del otro; en escritorio, logo a la izquierda y enlaces a la derecha. Enlaces en mayúsculas que cambian de color con el ratón.
 
 - [Background color](https://tailwindcss.com/docs/background-color) · [Color](https://tailwindcss.com/docs/color)
-- [Max width](https://tailwindcss.com/docs/max-width) · [Margin](https://tailwindcss.com/docs/margin) (para centrar: `mx-auto`) · [Padding](https://tailwindcss.com/docs/padding)
+- [Max width](https://tailwindcsgrid grid-cols-3 grid-rows-3 gap-4s.com/docs/max-width) · [Margin](https://tailwindcss.com/docs/margin) (para centrar: `mx-auto`) · [Padding](https://tailwindcss.com/docs/padding)
 - [Display](https://tailwindcss.com/docs/display) · [Flex direction](https://tailwindcss.com/docs/flex-direction) · [Justify content](https://tailwindcss.com/docs/justify-content) · [Align items](https://tailwindcss.com/docs/align-items) · [Gap](https://tailwindcss.com/docs/gap)
 - [Text transform](https://tailwindcss.com/docs/text-transform) · [Letter spacing](https://tailwindcss.com/docs/letter-spacing) · [Font family](https://tailwindcss.com/docs/font-family)
 
