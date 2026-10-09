@@ -35,7 +35,7 @@
     <!-- Tailwind CSS v4 desde el Play CDN (no hace falta instalar nada) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="text-stone-800">
+<body class="bg-stone-100 text-stone-800">
     
     <!-- =================================================================
          1. CABECERA
@@ -77,7 +77,7 @@
              Docs: https://tailwindcss.com/docs/font-size
                    https://tailwindcss.com/docs/border-radius
              ============================================================= -->
-        <section class="bg-amber-100">
+        <section class="bg-amber-100 border-b-4 border-green-900">
             <div class="max-w-5xl  mx-auto text-center px-6 py-20">
                 <p class="text-sm uppercase font-bold text-red-700">Desde 1962 en el barrio</p>
                 <h1 class="mt-3 font-serif text-4xl md:text-6xl font-bold text-green-900">Si no lo tenemos, se lo pedimos</h1>
@@ -104,13 +104,13 @@
              Docs: https://tailwindcss.com/docs/grid-template-columns
                    https://tailwindcss.com/docs/box-shadow
              ============================================================= -->
-        <section id="productos" class="">
-            <h2 class="">Qué encontrará en la tienda</h2>
+        <section id="productos" class="max-w-5xl mx-auto px-6 py-20">
+            <h2 class="font-serif text-3xl font-bold text-center text-green-900 mb-10">Qué encontrará en la tienda</h2>
 
-            <div class="">
-                <article class="">
-                    <h3 class="">Ferretería</h3>
-                    <p class="">Todo para los arreglos de casa, también por unidades.</p>
+            <div class="flex flex-col gap-6 md:flex-row">
+                <article class="border-t-7 border-green-700 bg-white p-6 rounded-xl shadow-md ">
+                    <h3 class="font-bold font-serif">Ferretería</h3>
+                    <p class="text-stone-800">Todo para los arreglos de casa, también por unidades.</p>
                     <ul class="">
                         <li>Tornillos, tuercas y tacos</li>
                         <li>Herramienta de mano</li>
@@ -118,8 +118,8 @@
                     </ul>
                 </article>
 
-                <article class="">
-                    <h3 class="">Mercería</h3>
+                <article class=" border-t-7 border-red-700 bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold font-serif">Mercería</h3>
                     <p class="">Para coser, remendar y dar una segunda vida a la ropa.</p>
                     <ul class="">
                         <li>Botones de todos los tamaños</li>
@@ -128,8 +128,8 @@
                     </ul>
                 </article>
 
-                <article class="">
-                    <h3 class="">Servicios</h3>
+                <article class="border-t-7 border-orange-400 bg-white p-6 rounded-xl shadow-md ">
+                    <h3 class="font-bold font-serif">Servicios</h3>
                     <p class="">Lo hacemos en el momento, mientras espera.</p>
                     <ul class="">
                         <li>Copia de llaves</li>
